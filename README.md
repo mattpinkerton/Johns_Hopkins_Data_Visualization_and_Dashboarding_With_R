@@ -6,6 +6,10 @@
 
 This is a repository for resources completed as part of the Johns Hopkins University Data Visualization and Dashboarding With R Specialization.
 
+<img src="https://user-images.githubusercontent.com/85677826/153673123-c817a002-a293-469b-9b74-ee0cf116ad5b.png" width="100" height="100"> \
+**Capstone Web Hosted App:**\
+https://matthew-pinkerton.shinyapps.io/Rio_2016_Olympics_Dashboard/
+
 **Course Link:**\
 https://www.coursera.org/specializations/jhu-data-visualization-dashboarding-with-r
 
