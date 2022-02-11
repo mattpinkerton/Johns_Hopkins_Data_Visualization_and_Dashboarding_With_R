@@ -1,0 +1,103 @@
+Codebook for Coursera Data Visualization Course
+Created by Collin Paschall, Johns Hopkins University
+
+Center for Effective Lawmaking Data
+Craig Volden and Alan Wiseman
+thelawmakers.org
+
+****DO NOT USE THESE DATA FOR ORIGINAL ANALYSIS. THEY HAVE BEEN EDITED FOR TEACHING PURPOSES. SOME OBSERVATIONS HAVE BEEN REMOVED****
+
+thomas_name: 
+	Name of the member
+
+congress:
+	number of the congress (there is a new congress every two years)
+
+year:
+	year of the start of the congress
+
+st_name:
+	State abbreviation for the member's district
+
+cd:
+	congressional district number
+	
+dem:
+	0/1 indicator for whether the member is a democrat
+
+elected:
+	year the member was elected
+
+female:
+	0/1 indicator for whether the member is female
+
+votepct:
+	the percent of the vote the MC won in the election for this congress
+
+dwnom1:
+	DW-Nominate score indicative member ideology. Higher is more conservative
+	
+deleg_size:
+	How many MCs are in the member's state delegation?
+
+speaker:
+	Is the member the Speaker of the House? 0/1
+
+subchr:
+	Is the member the chair of a congressional subcommittee?
+
+afam:
+	Is the member African American? 0/1
+
+latino:
+	Is the member latino?
+
+power:
+	Is the member on a "powerful" committee in Congress?
+
+chair:
+	Is the member a chair of a full committee?
+
+state_leg:
+	Was the member a state legislator prior to being elected to congress?
+	
+state_leg_prof:
+	How professionalized is the state legislature in the member's state? Higher is more professional
+
+majority:
+	Is the member in the majority in this congress? 0/1
+
+maj_leader:
+	Is the member a majority leader in this congress? 0/1
+
+min_leader:
+	Is the member a minority leader in this congress? 0/1
+
+meddist:
+	How far away is the member from the chamber median dwnom1 score?
+
+meddist:
+	How far away is the member from the majority median dwnom1 score?
+
+all_bills:
+	How many bills did the member introduce in this congress?
+
+all_aic:
+	How many bills did the member introduce that get action in a committee in this congress?
+
+all_abc: 
+	How many bills did the member introduce that get action beyond the committee state in this congress?
+
+all_pass:
+	How many bills did the member introduce that passed out of the House in this congress?
+
+all_law:
+	How many bills did the member introduced that became law in this congress?
+
+les:
+	Volden and Wiseman's legislative effective score (LES). Higher means the member is more effective.
+
+seniority:
+	How many term has the member been in congress, including the current term
+	
+

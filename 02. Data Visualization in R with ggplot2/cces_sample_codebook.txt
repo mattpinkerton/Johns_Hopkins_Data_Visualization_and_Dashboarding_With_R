@@ -1,0 +1,200 @@
+id_number: respondent ID number
+
+region: In which census region do you live?
+	1 Northwest
+	2 Midwest
+	3 South
+	4 West
+
+gender: Are you...
+	1 Male
+	2 Female
+	
+educ: What is the highest level of education you have completed?
+	1 No high school
+	2 High school graduate
+	3 Some college
+	4 2-year
+	5 4-year
+	6 Post-grad
+
+edloan: Are you currently responisble for paying off a student loan?
+	1 Yes
+	2 No
+
+race: What racial or ethnic group best describes you?
+	1 White
+	2 Black
+	3 Hispanic
+	4 Asian
+	5 Native American
+	6 Mixed
+	7 Other
+	8 Middle Eastern
+	
+hispanic: Are you of Spanish, Latino, or Hispanic origin or descent?
+	1 Yes
+	2 No
+
+employ: Which of the following best describes your current employment status?
+	1 Full-time
+	2 Part-time
+	3 Temporarily laid off
+	4 Unemployed
+	5 Retired
+	6 Permanently disabled
+	7 Homemaker
+	8 Student
+	9 Other
+
+marstat: What is you marital status?
+	1 Married
+	2 Separated
+	3 Divorced
+	4 Widowed
+	5 Never married
+	6 Domestic/civil partnership
+
+pid7: Generally speaking, do you think of yourself as a...?
+	1 Strong Democrat
+	2 Not very strong Democrat
+	3 Lean Democrat
+	4 Independent
+	5 Lean Republican
+	6 Not very strong Republican
+	7 Strong Republican
+	
+ideo5: In general, how would you describe your own political viewpoint?
+	1 Very liberal
+	2 Liberal
+	3 Moderate
+	4 Conservative
+	5 Very conservative
+
+pew_religimp: How important is religion in yuor life?
+	1 Very important
+	2 Somewhat important
+	3 Not too important
+	4 Not at all important
+
+newsint: Some people seem to follow what's going on in government and public affairs most of the time, whether there's an election going on or not. Others aren't that interested. Would you say you follow what's going on in government and public affairs...
+	1 Most of the time
+	2 Some of the time
+	3 Only now and then
+	4 Hardly at all
+	
+faminc_new: Thinking back over the last year, what was your family’s annual income?	
+ 1 Less than $10,000
+ 2 $10,000 - $19,999
+ 3 $20,000 - $29,999
+ 4 $30,000 - $39,999
+ 5 $40,000 - $49,999
+ 6 $50,000 - $59,999
+ 7 $60,000 - $69,999
+ 8 $70,000 - $79,999
+ 9 $80,000 - $99,999
+ 10 $100,000 - $119,999
+ 11 $120,000 - $149,999
+ 12 $150,000 - $199,999
+ 13 $200,000 - $249,999
+ 14 $250,000 - $349,999
+ 15 $350,000 - $499,999
+ 16 $500,000 or more
+
+union: Are you a member of a labor union?
+1 Yes, I am currently a member of a labor union
+2 I formerly was a member of a labor union
+3 I am not now, nor have I been, a member of a labor union
+	
+	
+investor: Do you personally (or jointly with a spouse), have any money invested in the stock market
+right now, either in an individual stock or in a mutual fund?
+ 1 Yes
+ 2 No
+	
+
+	
+CC18_308a Job approval – President Trump
+Do you approve or disapprove of the way each is doing their job...
+1 Strongly approve
+2 Somewhat approve
+3 Somewhat disapprove
+4 Strongly disapprove
+
+	
+
+	
+CC18_310a Party Recall + Name Recognition - Governor
+Please indicate whether you’ve heard of this person and if so which party he or she is affiliated
+with...
+1 Never heard of person
+2 Republican
+3 Democrat
+4 Other Party / Independent
+5 Not sure
+
+CC18_310b Party Recall + Name Recognition - Senator 1
+Please indicate whether you’ve heard of this person and if so which party he or she is affiliated
+with...
+1 Never heard of person
+2 Republican
+3 Democrat
+4 Other Party / Independent
+5 Not sure
+
+CC18_310c Party Recall + Name Recognition - Senator 2
+Please indicate whether you’ve heard of this person and if so which party he or she is affiliated
+with...
+1 Never heard of person
+2 Republican
+3 Democrat
+4 Other Party / Independent
+5 Not sure
+
+CC18_310d Party Recall + Name Recognition - Representative
+
+Please indicate whether you’ve heard of this person and if so which party he or she is affiliated
+with...
+1 Never heard of person
+2 Republican
+3 Democrat
+4 Other Party / Independent
+5 Not sure
+
+CC18_325a Taxes – Cut the Corporate Income Tax rate from 39 percent to
+21 percent.
+
+Congress considered many changes in tax law over the past two years. Do you support or
+oppose each of the following?
+1 Support
+2 Oppose
+
+CC18_325b Taxes – Reduce the mortgage interest deduction. Allow people to deduct the interest on no more than
+$500,000 of mortgage debt. The previous limit was $1 million.
+Congress considered many changes in tax law over the past two years. Do you support or
+oppose each of the following?
+1 Support
+2 Oppose
+
+CC18_325c Taxes – Limit the amount of state and local taxes that can be
+deducted to $10,000 (previously there was no limit).
+Congress considered many changes in tax law over the past two years. Do you support or
+oppose each of the following?
+1 Support
+2 Oppose
+
+CC18_325d Taxes – Increase the standard deduction on federal income
+taxes from $12,000 to to $25,000
+Congress considered many changes in tax law over the past two years. Do you support or
+oppose each of the following?
+1 Support
+2 Oppose
+
+
+	
+	
+	
+	
+	
+	
+	
