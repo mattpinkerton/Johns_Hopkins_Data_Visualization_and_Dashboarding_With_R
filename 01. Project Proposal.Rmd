@@ -1,0 +1,33 @@
+---
+title: "Project Proposal"
+author: "Matthew Pinkerton"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Project Topic
+
+My project will be an analysis of the 2016 Summer Olympic Games in Rio de Janeiro. My analysis will assess the performance of athletes across different characteristics. I will measure gold, silver & bronze medals achieved across different sports, nationalities, genders, age, height & weight.
+
+## Data Sources
+
+Data source: https://github.com/flother/rio2016  
+
+This is a copy of the official statistics for the 2016 Olympic Games athlete data from the Rio 2016 website recorded by the International Olympic Committee (IOC) at the time of the Games, as webscraped and documented by GitHub user "flother". Unfortunately the website was deleted shortly after the 2016 Olympic Games, but the IOC have since made similar information available on their website @ https://www.olympic.org/olympic-results?g=Rio%202016 in unstructured formats, that can verify most of this data.
+
+## Description of the Data
+
+The dataset details information for all 11,538 athletes that competed across 306 events at the 2016 Olympic Games. The data captures information by athlete, noting nationality, sex, D.O.B, height, weight, sport(event), gold medal indicator, silver medal indicator, bronze medal indicator. The data is formatted in a "tidy" rectangular format, with a row for each athlete (observation), and a column for each characteristic (variable).
+
+It was recommended to use data with less than 10,000 rows. 11,538 rows in this dataset does not significantly exceed the recommendation.
+
+## Ideas about the figures that you will create to visualize this data:
+
+Idea 1: A scatter plot of total athletes per country against total medals per country. Do countries with more athletes win more medals?
+
+Idea 2: A bar chart of medals in each sporting event, stacked by gender. Which sporting events offer the most medals? Are some sporting events only offered to certain genders?
+
+Idea 3: A scatter plot of weight against height, with size of observations set by number of medals won. Do taller and heavier athletes win more medals?
