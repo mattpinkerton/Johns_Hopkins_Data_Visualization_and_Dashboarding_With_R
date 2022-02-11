@@ -1,0 +1,83 @@
+---
+title: "Animations and Interactivity"
+output: html_document
+---
+
+# Matthew Pinkerton
+
+## Problem 1
+
+```{r problem_1_data,include=FALSE}
+
+#####DO NOT MODIFY THIS CHUNK
+library(tidyverse)
+
+Category<-c("Alpha","Beta","Zeta")
+City<-c("Hong Kong","London","Nairobi")
+
+my_dat<-expand_grid(Category,City)
+
+set.seed(84684)
+
+my_dat$Value<-sample(1:10,9,replace=T)
+```
+
+```{r problem_1_solution,echo=FALSE,message=FALSE}
+
+library(gganimate)
+library(gifski)
+
+my_anim <- ggplot(my_dat,aes(x=Category,y=Value,fill=City))+geom_bar(stat="identity")+transition_states(City)+enter_fade()+exit_fade()
+my_anim
+
+```
+
+## Problem 2
+
+```{r problem_2_data,include=FALSE}
+
+#####DO NOT MODIFY THIS CHUNK
+
+Response<-c("Energize","Amazing","Great")
+set.seed(9819)
+Energize<-tibble(Company=rep("Energize",100),Output=rnorm(100,50,20))
+set.seed(9819)
+Amazing<-tibble(Company=rep("Amazing",100),Output=rnorm(100,50,10))
+set.seed(9819)
+Great<-tibble(Company=rep("Great",100),Output=rnorm(100,40,5))
+
+my_dat<-bind_rows(Energize,Amazing,Great)
+```
+
+```{r problem_2_solution,echo=FALSE,message=FALSE,warning=FALSE}
+
+library(plotly)
+
+plot <- ggplot(my_dat,aes(x=Company,y=Output,fill=Company))+geom_boxplot()
+ggplotly(plot)
+
+```
+
+## Problem 3
+
+```{r problem_3_data,echo=FALSE,message=FALSE,warning=FALSE}
+
+library(plotly)
+
+Category<-seq(from=1,to=10)
+Time<-seq(from=1,to=10)
+
+dat3<-expand_grid(Category,Time)
+
+set.seed(78957)
+dat3$Quantity<-runif(100,0,10)
+```
+
+
+```{r problem_3_solution,echo=FALSE,message=FALSE,warning=FALSE}
+
+library(plotly)
+
+ggplotly(ggplot(dat3,aes(x=Category,y=Quantity,frame=Time))+geom_point()+geom_segment(aes(x=Category,xend=Category,y=0,yend=Quantity)))
+
+```
