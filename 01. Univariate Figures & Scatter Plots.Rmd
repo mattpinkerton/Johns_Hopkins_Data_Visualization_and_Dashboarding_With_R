@@ -1,0 +1,81 @@
+---
+title: "Week 1 Peer Review"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+
+######DO NOT MODIFY. This will load required packages and data.
+
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+cel <- drop_na(read_csv(url("https://www.dropbox.com/s/4ebgnkdhhxo5rac/cel_volden_wiseman%20_coursera.csv?raw=1")))
+```
+
+Your objective is to replicate these figures, created using the Center of Legislative Effectiveness Data. These figures are similar to those we completed in the lecture videos.
+
+### Matthew Pinkerton
+
+**IMPORTANT: Filter your data so you are only displaying information for the 115th Congress.**
+
+## Exercise 1
+
+Hints:
+
+* For the y-axis, use the variable "all_pass".
+
+* For the x-axis, use the variable "dwnom1".
+
+* Make sure you recode the data for the "female" variable and rename it as "Gender" to generate the correct labels for the legend.
+
+* Set the color aesthetic in the ggplot() function to make the color of the dots change based on Gender.
+
+* Make sure the axis labels are correct.
+
+```{r exercise1,echo=FALSE}
+fig115 <- cel %>% rename("Gender"="female") %>% filter(congress==115) %>% mutate(Gender=recode(Gender,'0'='Male','1'='Female'))
+ggplot(fig115,aes(x=dwnom1,y=all_pass,color=Gender))+geom_point()+labs(x="Ideology",y="Bills passed")
+
+```
+
+## Exercise 2
+
+Hints:
+
+* For the x-axis, use the variable "votepct".
+
+* For the y-axis, use "all_pass".
+
+* Make sure you recode the data for the "female" variable to generate the correct labels for the legend. Rename that column "Gender". (you may have already done this in the last exercise)
+
+* Make sure you recode the data for "majority" variable to generate the correct labels of the facetted figures.
+
+* Set the color aesthetic in the ggplot() function to make the color of the dots change based on Gender.
+
+* Use scale_color_manual() to set the colors to green for males and orange for females.
+
+* Make sure the axis labels are correct.
+
+
+```{r exercise2,echo=FALSE}
+fig115 <- fig115 %>% mutate(majority=recode(majority,'0'='Minority','1'='Majority'))
+ggplot(fig115,aes(x=votepct,y=all_pass,color=Gender))+geom_point()+labs(x="Vote Percentage",y="Bills passed") + scale_color_manual(values=c("orange","green"))+facet_wrap(~majority)
+```
+
+## Exercise 3
+
+Hints:
+
+* For the y-axis, use the variable "les".
+
+* Make sure you recode the data for the "majority" variable to generate the correct labels. (you may have already done this in the last exercise)
+
+* Make sure the axis labels and figure title are correct.
+
+
+```{r exercise3,echo=FALSE}
+
+ggplot(fig115,aes(y=les, x=majority))+geom_boxplot()+labs(title="LES in the 115th Congress",x="Majority or Minority",y="Legislative Effectiveness")
+
+```
